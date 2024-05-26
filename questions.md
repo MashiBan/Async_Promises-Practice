@@ -2,15 +2,15 @@
 Write a  function "higher order "that takes a callback function as an argument . Inside the "higher order" , call the callback function syncrounously .
 
 
-# what is a callback function?
+##### what is a callback function?
 callback function is function that is formed for the sole purpose of passing to another fucntion as parameter.
 
-# what is a Syncronous function 
-# what is the difference betweeen callback function and normal function?
-# what is a higher order function.
+##### what is a Syncronous function 
+##### what is the difference betweeen callback function and normal function?
+##### what is a higher order function.
 A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
 
-# what is the differnce between higher-order funciton and callback funciton?
+##### what is the differnce between higher-order funciton and callback funciton?
 new Date()
 
 ---------------------------------------------------------------------------
@@ -20,16 +20,16 @@ new Date()
 Write a function "HigherOrderAsync" that takes a callback function as an argument. Inside "HigherOrderAsync", call the callback function asynchronously using setTimeout after a delay of n seconds  , Where n is the current day of the month.(1 <= n <= 31)
 
 
-# What is setTimeOut?
+##### What is setTimeOut?
 The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.
 
-# How do I obtain the current day of the month?
+##### How do I obtain the current day of the month?
+ new Date()
 
-
-# is setTimeOut asynchronous?
+##### is setTimeOut asynchronous?
 setTimeout() is an asynchronous function, meaning that the timer function will not pause execution of other functions in the functions stack.
 
-# How do I use setTimeout and callback fucntion in order to achive what question has asked to do?
+##### How do I use setTimeout and callback fucntion in order to achive what question has asked to do?
 setTimeout(functionRef, delay)
 
 -----------------------------------------------------------------
@@ -37,7 +37,7 @@ setTimeout(functionRef, delay)
 ### Array Map with Callback:
 Implement a function mapArray that takes an array and a callback function as arguments. mapArray should apply the callback function to each element of the array and return a new array with the modified values.
 
-# how to map to every element?
+##### how to map to every element?
 The map() method is an iterative method. It calls a provided callbackFn function once for each element in an array and constructs a new array from the results.
 
 Since map builds a new array, calling it without using the returned array is an anti-pattern; use forEach or for...of instead.
@@ -52,7 +52,7 @@ array1.map((x) => x * 2); //returns an array
 ### Array Filter with Callback:
 Write a function filterArray that takes an array and a callback function as arguments. filterArray should filter the elements of the array based on the condition specified by the callback function and return a new array with the filtered elements.
 
-# How do we filter the elements of the array based on condition specified by the callback
+##### How do we filter the elements of the array based on condition specified by the callback
 filter(callbackFn)
 Return value
 A shallow copy of the given array containing just the elements that pass the test. If no elements pass the test, an empty array is returned.
@@ -62,7 +62,7 @@ A shallow copy of the given array containing just the elements that pass the tes
 ### File Processing with Callback:
 - Write a function 'readFileCallback' that takes a filename and a callback function. 'readFileCallback' should read the contents of the file asynchronously and pass the data to the callback function.
 
-# How do you 'read' the contents of the filename asynchronously
+##### How do you 'read' the contents of the filename asynchronously
 readFile( Path, Options, Callback);
 
 --------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ readFile( Path, Options, Callback);
 ### Parallel Execution with Callbacks:
 - Implement a function 'parallelFileOperation' that returns an array of size 2 with the first index containing the contents of the file 'a.txt' in UTF-8 encoding. If `a.txt` doesn't exist, then throw an error. The second element of the array contains 1 if the text `Hello!` is successfully written to the file `b.txt` and 0 if the write operation fails.
                                                  
-# How do we do parallel file operations in js?
+##### How do we do parallel file operations in js?
 
 
 ### Sequential Execution with Callbacks:

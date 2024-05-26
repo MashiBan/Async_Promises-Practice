@@ -12,7 +12,7 @@ rejected: meaning that the operation failed.
 ### Basic Promises
 - Create a function delay(ms) that returns a promise which resolves after ms milliseconds.
 
-### Why are we using resolve every time with promises 
+##### Why are we using resolve every time with promises 
 
 Explanation of resolve in a Promise
 When you create a promise using the Promise constructor, you pass an executor function to it. This executor function receives two arguments: resolve and reject. Here’s a breakdown of how and why resolve is used:
@@ -25,14 +25,14 @@ Calling resolve(value) indicates that the asynchronous task has completed succes
 ### Chaining Promises
 - Create a promise that resolves to a number, then chain .then handlers to multiply this number by 2, then add 3, then subtract 5. Log the final result.
 
-# How to do chaining of promises?
+##### How to do chaining of promises?
 - use.then()
 
 ==============================================
 ### Error Handling in Promises
 - Create a promise that rejects with an error message. Add .catch to handle the error and log the error message.
 
-# How to handle error
+##### How to handle error
  use catch()
  Example: Promise.reject("Something went wrong").catch(err => console.log(err)).
 
@@ -41,7 +41,7 @@ Calling resolve(value) indicates that the asynchronous task has completed succes
 ### Promise.all
 - Create three promises: one resolves after 1 second, one after 2 seconds, and one after 3 seconds. Use Promise.all to execute something after all promises have resolved and log the results.
 
-# How to use Promise.all
+##### How to use Promise.all
 The Promise.all() method is one of the promise concurrency methods. It can be useful for aggregating the results of multiple promises. It is typically used when there are multiple related asynchronous tasks that the overall code relies on to work successfully — all of whom we want to fulfill before the code execution continues.
 
 s
@@ -55,7 +55,7 @@ It rejects when any of the input's promises rejects, with this first rejection r
 ### Promise.race
 - Create three promises: one resolves after 1 second, one after 2 seconds, and one after 3 seconds. Use Promise.race to execute something as soon as the first promise resolves and log the result.
 
-# How will we use Promise.race
+##### How will we use Promise.race
 The Promise.race() static method takes an iterable of promises as input and returns a single Promise. This returned promise settles with the eventual state of the first promise that settles.
 
 pehle wala promise complete hona ka wait krrta hai and return krrdeta hai...jo bhi pehle ho jae
