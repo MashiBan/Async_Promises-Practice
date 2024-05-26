@@ -1,3 +1,5 @@
+![promises](image.png)
+
 A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
 
 A Promise is in one of these states:
@@ -52,3 +54,12 @@ It rejects when any of the input's promises rejects, with this first rejection r
 =============================================
 ### Promise.race
 - Create three promises: one resolves after 1 second, one after 2 seconds, and one after 3 seconds. Use Promise.race to execute something as soon as the first promise resolves and log the result.
+
+# How will we use Promise.race
+The Promise.race() static method takes an iterable of promises as input and returns a single Promise. This returned promise settles with the eventual state of the first promise that settles.
+
+pehle wala promise complete hona ka wait krrta hai and return krrdeta hai...jo bhi pehle ho jae
+
+like if p2 completes first then it will return the results of p2 and end
+ChatGPT
+Yes, that is correct. If p2 completes first, then Promise.race will return the result of p2 and ignore the results of the other promises.
